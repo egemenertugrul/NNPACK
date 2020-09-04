@@ -58,16 +58,15 @@ NNPACK is not intended to be directly used by machine learning researchers; inst
 
 ## Building
 
-For most users, the recommended way to build NNPACK is through CMake:
-
 ```bash
+git clone https://github.com/egemenertugrul/NNPACK.git
+cd NNPACK
 mkdir build
 cd build
-cmake -G Ninja ..
+cmake -G Ninja -D BUILD_SHARED_LIBS=ON ..
 ninja
+sudo ninja install
 ```
-
-Note: if `ninja` is not available on your system, configure without `-G Ninja`, and use `make` instead of `ninja`.
 
 ### Cross-compilation for Android
 
