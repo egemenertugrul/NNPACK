@@ -59,6 +59,7 @@ NNPACK is not intended to be directly used by machine learning researchers; inst
 ## Building
 
 ```bash
+sudo apt-get install ninja-build || brew install ninja
 git clone https://github.com/egemenertugrul/NNPACK.git
 cd NNPACK
 mkdir build
